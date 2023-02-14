@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% include 'header.html' %}
+
+    {{msg}}
+    <h3 class="text=center jumbotron"> Latest Appointments </h3>
+    {% for row in rows %}
+        <div class="card container bg-info">
+            <h4>{{row[1] }}</h4>
+            <b>{{ row [2] }} </b>
+            <b> {{ row [3] }}</b>
+            <i> {{ row [4] }}</i>
+            <b> {{ row [5] }}</b>
+            <b> {{ row [6] }} </b>
+        </div>
+    {% endfor %}
+
+
+{% include 'footer.html' %}
+
+</body>
+</html>

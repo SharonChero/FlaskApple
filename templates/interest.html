@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%include 'header.html' %}
+
+<section class="row">
+      <div class="col-md-8">
+        <form action="" method="post">
+           <input type="text" name="principal"
+                placeholder="Your principal"  required>
+                <br> <br>
+                <input type="text" name="rate"
+                placeholder="Your rate" required>
+                 <br><br>
+                <input type="text" name="time"
+                placeholder="Your time">
+                <br> <br>
+                <input type="submit" class="btn btn-info">
+                <br>
+
+        </form>
+      </div>
+            <div class="col-md-4">
+                <p> principal {{principal}} KES</p>
+                <P>Rate {{rate}} %</P>
+                <p>Time {{time}} Years</p>
+                <h2> Your SI {{inte}} KES</h2>
+
+            </div>
+
+</section>
+<br> <br>
+</body>
+{%include 'footer.html' %}
+</html>

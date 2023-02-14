@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% include 'header.html' %}
+<a href="/register">Don't have an account? Create</a>
+<a href="/forgot">Forgot Password</a>
+<br><br>
+<h4 class="alert alert-danger" style="color: green;">{{msg}}</h4>
+<form action="/login" method="post">
+    <input type="text"name="username"
+    placeholder="Enter Username"> <br><br>
+    <input type="password" name="password"
+    placeholder="Enter Password"> <br><br>
+    <br><br>
+    <input type="submit" class="btn btn-dark">
+
+
+</form>
+{% include 'footer.html' %}
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title </title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+
+</head>
+<body>
+
+{% include 'header.html' %}
+<h2>BMI Calc</h2>
+<!--we place / bmi in action, then we use post since secure-->
+<!--post will carry height and weight values to/bmi-->
+<section class="row">
+    <div class="col-md-8">
+            <form action="" method="post">
+                <input type="text" name="weight"
+                placeholder="Your Weight"  required>
+                <br> <br>
+                <input type="text" name="height"
+                placeholder="Your height" required>
+                <br> <br>
+                <input type="submit" class="btn btn-info">
+                <br>
+            </form>
+    </div>
+
+    <div class="col-md-4">
+      <h2 class="alert alert-sucess">{{msg}}</h2>
+
+    </div>
+
+{% include 'footer.ht{% include 'footer.html' %}
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% include 'header.html' %}
+<h4 style="color: green;">{{msg}}</h4>
+<form action="/appointments" method="post">
+    <input type="text"name="names"
+    placeholder="Your Names">
+    <br><br>
+    <label for="">Select Appointment Date</label> <br>
+    <input type="text"name="date"><br><br>
+
+    <label for="">Select Appointment Time </label><br>
+    <input type="text"name="time"><br><br>
+
+    <input type="tel"name="tel"
+    placeholder="Your Telephone Number"><br><br>
+
+    <label for="">Doctors to see</label><br>
+    <input type="text"name="doctor"><br><br>
+    <input type="submit" class="btn btn-info">
+
+</form>
+
+
+{% include 'footer.html' %}
+
+
+</body>
+</html>

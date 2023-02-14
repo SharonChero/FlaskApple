@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% include 'header.html' %}
+<section class="row">
+    <div class="col-md-8">
+    <form action="" method="post">
+        <input type="text" name="name" placeholder="Enter name">
+        <br><br>
+        <input type="text" name="admno" placeholder="Enter Admission number">
+        <br><br>
+        <input type="text" name="math" placeholder="Enter Math">
+        <br><br>
+        <input type="text" name="english" placeholder="Enter Eng">
+        <br><br>
+        <input type="text" name="physics" placeholder="Enter Physics">
+        <br><br>
+        <input type="text" name="comment" placeholder="Teachers comment">
+        <br><br>
+        <input type="submit" class="btn btn-dark">
+    </form>
+    </div>
+    <br>
+    <div class="col-md-4">
+        <p> Student Name Kenya {{name}}</p>
+        <p>Student Admission Number{{admno}}</p>
+        <p>math {{math}}</p>
+        <p>english {{english}}</p>
+        <p>physics {{physics}}</p>
+        <h2>Your Total Marks {{total}}</h2>
+        <p>You have {{comment}}</p>
+
+    </div>
+</section>
+</body>
+{% include 'footer.html' %}
+</html>
